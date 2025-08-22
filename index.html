@@ -21,7 +21,7 @@
 
 <body class="bg-slate-50 text-gray-800">
 
-  <header class="bg-sky-500/80 shadow-sm sticky top-0">
+  <header class="bg-sky-500 shadow-sm sticky top-0 z-50">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
       <div class="text-2xl font-bold text-white">
         Synapse
@@ -186,13 +186,16 @@
   <script type="module">
   import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0/dist/web.js'
 
-  Typebot.initBubble({
-    typebot: "lead-magnet-gpgzzid",
-    theme: {
-      button: { backgroundColor: "#1D1D1D" },
-      chatWindow: { backgroundColor: "#f1f1f1" },
-    },
-  });
+  // Adiciona um atraso de 1 segundo (1000ms) para garantir que a página carregou
+  setTimeout(() => {
+    Typebot.initBubble({
+      typebot: "lead-magnet-gpgzzid",
+      theme: {
+        button: { backgroundColor: "#1D1D1D" },
+        chatWindow: { backgroundColor: "#f1f1f1" },
+      },
+    });
+  }, 1000); // O valor aqui é em milissegundos
 </script>
 </body>
 </html>
