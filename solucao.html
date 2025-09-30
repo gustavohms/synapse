@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Solução Synapse - Análise de Crédito Inteligente</title>
+</head>
+
+<body class="bg-slate-100 text-gray-800">
+
+  <header class="bg-sky-500 shadow-sm sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-white">
+        <a href="index.html">Synapse</a>
+      </div>
+      <div>
+        <a href="index.html" class="bg-white hover:bg-slate-200 text-sky-600 font-bold py-2 px-4 rounded-lg transition duration-300">
+          &larr; Voltar ao Início
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="py-16 md:py-24 px-6 bg-slate-100">
+      <div class="container mx-auto">
+        <div class="text-center max-w-3xl mx-auto">
+          <h1 class="text-3xl md:text-4xl font-bold text-slate-800" data-aos="fade-up">A Plataforma em Ação</h1>
+          <p class="mt-4 text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+            Veja um exemplo simplificado de como nossa IA analisa e recomenda uma operação de crédito, transformando dados brutos em decisões seguras e ágeis.
+          </p>
+        </div>
+
+        <div class="mt-12 max-w-6xl mx-auto" data-aos="zoom-in-up" data-aos-delay="200">
+          <div class="bg-slate-700 rounded-t-lg p-2 flex items-center">
+            <div class="flex space-x-2">
+              <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+              <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+              <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+            </div>
+          </div>
+          
+          <div class="bg-white p-6 md:p-10 rounded-b-lg shadow-2xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+              
+              <div class="border-r-0 lg:border-r lg:pr-8 border-slate-200">
+                <h2 class="text-2xl font-bold text-slate-700 mb-6">1. Dados da Análise</h2>
+                <form class="space-y-5">
+                  <div>
+                    <label for="associado" class="block text-sm font-medium text-gray-700">Associado</label>
+                    <input type="text" id="associado" value="Maria Souza da Silva" class="mt-1 block w-full bg-slate-100 border-slate-200 rounded-md shadow-sm p-2" readonly>
+                  </div>
+                  <div>
+                    <label for="cpf" class="block text-sm font-medium text-gray-700">CPF do Associado</label>
+                    <input type="text" id="cpf" value="***.456.789-**" class="mt-1 block w-full bg-slate-100 border-slate-200 rounded-md shadow-sm p-2" readonly>
+                  </div>
+                  <div>
+                    <label for="produto" class="block text-sm font-medium text-gray-700">Produto de Crédito Desejado</label>
+                    <select id="produto" class="mt-1 block w-full bg-white border border-slate-300 rounded-md shadow-sm p-2 focus:ring-sky-500 focus:border-sky-500">
+                      <option>Capital de Giro</option>
+                      <option>Crédito Pessoal</option>
+                      <option>Financiamento de Veículo</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="valor" class="block text-sm font-medium text-gray-700">Valor Solicitado</label>
+                    <div class="relative">
+                      <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-500">R$</span>
+                      <input type="text" id="valor" value="25.000,00" class="mt-1 block w-full pl-10 border border-slate-300 rounded-md shadow-sm p-2 focus:ring-sky-500 focus:border-sky-500">
+                    </div>
+                  </div>
+                  <div class="pt-4">
+                    <button type="button" class="w-full flex items-center justify-center bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-4 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
+                      <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.898 20.624l.21-1.462a3.375 3.375 0 00-2.148-2.148l-1.462-.21a3.375 3.375 0 00-2.148 2.148l-.21 1.462a3.375 3.375 0 002.148 2.148l1.462.21a3.375 3.375 0 002.148-2.148z"></path></svg>
+                      Analisar com Synapse
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <div>
+                <h2 class="text-2xl font-bold text-slate-700 mb-6">2. Resultado da Análise IA</h2>
+                <div class="space-y-6">
+                  <div class="bg-green-50 border border-green-200 p-6 rounded-lg text-center">
+                    <div class="flex justify-center mb-3">
+                        <div class="bg-green-100 p-3 rounded-full">
+                            <svg class="w-8 h-8 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                    </div>
+                    <p class="text-xl font-bold text-green-800">CRÉDITO RECOMENDADO</p>
+                    <p class="text-sm text-green-700">Score de Confiança: <span class="font-bold">92%</span></p>
+                  </div>
+                  
+                  <div>
+                    <h3 class="font-bold text-slate-600 mb-3">Fatores Chave da Decisão:</h3>
+                    <ul class="space-y-3 text-gray-600">
+                      <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg><span><b class="text-slate-700">Positivo:</b> Excelente histórico de pagamentos na cooperativa.</span></li>
+                      <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg><span><b class="text-slate-700">Positivo:</b> Baixo nível de endividamento em outras instituições.</span></li>
+                      <li class="flex items-start"><svg class="w-5 h-5 text-yellow-500 mr-2 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" /></svg><span><b class="text-slate-700">Ponto de Atenção:</b> O valor da parcela comprometerá 32% da renda mensal declarada.</span></li>
+                    </ul>
+                  </div>
+                  <div class="pt-4">
+                    <button type="button" class="w-full bg-slate-700 hover:bg-slate-800 text-white font-bold py-3 px-4 rounded-lg transition duration-300">Próximos Passos: Gerar Contrato</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-16 md:py-24 px-6">
+      <div class="container mx-auto">
+        <div class="text-center max-w-3xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-800" data-aos="fade-up">O Fluxo de Análise Simplificado</h2>
+          <p class="mt-4 text-lg text-gray-600" data-aos="fade-up" data-aos-delay="100">
+            Traduzimos um processo complexo e demorado em um fluxo de trabalho ágil, transparente e inteligente, do início ao fim.
+          </p>
+        </div>
+
+        <div class="mt-16 max-w-5xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+            <div class="flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="100">
+              <div class="bg-sky-500 text-white w-16 h-16 flex items-center justify-center rounded-full text-2xl font-bold shadow-md">1</div>
+              <h3 class="mt-4 text-lg font-bold text-slate-800">Solicitação</h3>
+              <p class="mt-1 text-gray-600">O associado entra em contato com seu gerente e informa a necessidade de crédito.</p>
+            </div>
+            
+            <div class="hidden md:flex items-center justify-center text-sky-300">
+                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </div>
+
+            <div class="flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="bg-sky-500 text-white w-16 h-16 flex items-center justify-center rounded-full text-2xl font-bold shadow-md">2</div>
+              <h3 class="mt-4 text-lg font-bold text-slate-800">Análise do Gerente</h3>
+              <p class="mt-1 text-gray-600">O gerente analisa o perfil e insere os dados da solicitação na plataforma Synapse.</p>
+            </div>
+
+            <div class="hidden md:flex items-center justify-center text-sky-300">
+                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </div>
+            
+            <div class="flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="300">
+              <div class="bg-sky-500 text-white w-16 h-16 flex items-center justify-center rounded-full text-2xl font-bold shadow-md">3</div>
+              <h3 class="mt-4 text-lg font-bold text-slate-800">Devolutiva</h3>
+              <p class="mt-1 text-gray-600">A plataforma cruza os dados e devolve uma recomendação (aprovado/negado) para o gerente.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  
+  <footer class="bg-slate-900 text-white text-center p-6 border-t border-slate-700">
+    <p class="text-slate-400">&copy; 2025 Synapse. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>
